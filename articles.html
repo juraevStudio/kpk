@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <button class="btn_burgir">
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header__navbar">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="#" class="item">Сбережения</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Займы</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Акции</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__nav_top">
+                        <ul class="ul">
+                            <li class="li">
+                                <a href="#" class="item">О компании</a>
+                            </li>
+                            <li class="li">
+                                <a href="#" class="item">Новости</a>
+                            </li>
+                            <li class="li">
+                                <a href="#" class="item">Статьи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <button class="open">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M16.8581 16.184L12.9698 12.2958C14.0129 11.0967 14.6443 9.53215 14.6443 7.82217C14.6443 4.05809 11.5827 1 7.82217 1C4.05809 1 1 4.06164 1 7.82217C1 11.5827 4.06164 14.6443 7.82217 14.6443C9.53215 14.6443 11.0967 14.0129 12.2958 12.9698L16.184 16.8581C16.2763 16.9503 16.4004 17 16.5211 17C16.6417 17 16.7659 16.9539 16.8581 16.8581C17.0426 16.6736 17.0426 16.3685 16.8581 16.184ZM1.95432 7.82217C1.95432 4.5867 4.5867 1.95787 7.81862 1.95787C11.0541 1.95787 13.6829 4.59024 13.6829 7.82217C13.6829 11.0541 11.0541 13.69 7.81862 13.69C4.5867 13.69 1.95432 11.0576 1.95432 7.82217Z" fill="#282828" stroke="#282828" stroke-width="0.8"/>
+                        </svg>
+                    </button>
+                    <div class="header__search_wrap">
+                        <button class="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M16.8581 16.184L12.9698 12.2958C14.0129 11.0967 14.6443 9.53215 14.6443 7.82217C14.6443 4.05809 11.5827 1 7.82217 1C4.05809 1 1 4.06164 1 7.82217C1 11.5827 4.06164 14.6443 7.82217 14.6443C9.53215 14.6443 11.0967 14.0129 12.2958 12.9698L16.184 16.8581C16.2763 16.9503 16.4004 17 16.5211 17C16.6417 17 16.7659 16.9539 16.8581 16.8581C17.0426 16.6736 17.0426 16.3685 16.8581 16.184ZM1.95432 7.82217C1.95432 4.5867 4.5867 1.95787 7.81862 1.95787C11.0541 1.95787 13.6829 4.59024 13.6829 7.82217C13.6829 11.0541 11.0541 13.69 7.81862 13.69C4.5867 13.69 1.95432 11.0576 1.95432 7.82217Z" fill="#9AD22F" stroke="#9AD22F" stroke-width="0.8"/>
+                            </svg>
+                        </button>
+                        <input type="text" class="input" placeholder="Поиск по сайту">
+                        <div class="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.31363 5.89949L11.5563 1.65685L10.1421 0.242641L5.89941 4.48528L1.65677 0.242641L0.24256 1.65685L4.4852 5.89949L0.24256 10.1421L1.65677 11.5563L5.89941 7.31371L10.1421 11.5563L11.5563 10.1421L7.31363 5.89949Z" fill="#C3CFD8"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <a href="tel:8 (383) 2000 600" class="header__phone">8 (383) <span>2000 600</span></a>
+                <button class="header__call open-modal">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+    <div class="modal" id="modal-main">
+        <button class="modal__close"></button>
+        <div class="consultation__form">
+            <button class="modal__close"></button>
+            <div class="input">
+                <input type="text" placeholder="Ваше имя">
+            </div>
+            <div class="input">
+                <input class="tel input_phone" type="text" placeholder="Телефон">
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Электронная почта">
+            </div>
+            <button class="btn modal-2-open">Отправить заявку</button>
+        </div>
+    </div>
+    <div class="modal" id="modal-main2">
+        <div class="consultation__form">
+            <button class="modal__close"></button>
+            <p class="title">Заявка отправлена!</p>
+            <p class="text2">В ближайшее время с Вами свяжется наш менеджер</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-main3">
+        <button class="modal__close"></button>
+        <div class="consultation__form">
+            <button class="modal__close"></button>
+            <div class="input">
+                <input type="text" placeholder="Ваше имя">
+            </div>
+            <textarea class="textarea" placeholder="Ваш отзыв"></textarea>
+            <button class="btn">Отправить</button>
+        </div>
+    </div>
+    <main class="main pages">
+        <section class="article_page">
+            <div class="container">
+                <div class="crumbs">
+                    <a href="#">Главная</a>
+                    <span>/</span>
+                </div>
+                <h1>Статьи</h1>
+                <div class="article__wrap">
+                    <div class="article__left">
+                        <p class="title">Общие вопросы</p>
+                        <span class="line"></span>
+                    </div>
+                    <div class="article__right">
+                        <div class="article__slider">
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/2.png" alt="">
+                                    </div>
+                                    <p class="title">Как задать общие вопросы на английском?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/3.png" alt="">
+                                    </div>
+                                    <p class="title">Что такое обычный
+                                        вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/4.png" alt="">
+                                    </div>
+                                    <p class="title">Чем отличаются общие
+                                        и специальные вопросы?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article__wrap">
+                    <div class="article__left">
+                        <p class="title">Вопросы
+                            по займам</p>
+                        <span class="line"></span>
+                    </div>
+                    <div class="article__right">
+                        <div class="article__slider">
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/5.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/6.png" alt="">
+                                    </div>
+                                    <p class="title">Как задать общие вопросы на английском?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/7.png" alt="">
+                                    </div>
+                                    <p class="title">Что такое обычный
+                                        вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/8.png" alt="">
+                                    </div>
+                                    <p class="title">Чем отличаются общие
+                                        и специальные вопросы?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article__wrap">
+                    <div class="article__left">
+                        <p class="title">Вопросы
+                            по займам</p>
+                        <span class="line"></span>
+                    </div>
+                    <div class="article__right">
+                        <div class="article__slider">
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/9.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/10.png" alt="">
+                                    </div>
+                                    <p class="title">Как задать общие вопросы на английском?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/11.png" alt="">
+                                    </div>
+                                    <p class="title">Что такое обычный
+                                        вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/12.png" alt="">
+                                    </div>
+                                    <p class="title">Чем отличаются общие
+                                        и специальные вопросы?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article__wrap">
+                    <div class="article__left">
+                        <p class="title">Общие вопросы</p>
+                        <span class="line"></span>
+                    </div>
+                    <div class="article__right">
+                        <div class="article__slider">
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/2.png" alt="">
+                                    </div>
+                                    <p class="title">Как задать общие вопросы на английском?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/3.png" alt="">
+                                    </div>
+                                    <p class="title">Что такое обычный
+                                        вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/4.png" alt="">
+                                    </div>
+                                    <p class="title">Чем отличаются общие
+                                        и специальные вопросы?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article__wrap">
+                    <div class="article__left">
+                        <p class="title">Вопросы
+                            по займам</p>
+                        <span class="line"></span>
+                    </div>
+                    <div class="article__right">
+                        <div class="article__slider">
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/5.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/6.png" alt="">
+                                    </div>
+                                    <p class="title">Как задать общие вопросы на английском?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/7.png" alt="">
+                                    </div>
+                                    <p class="title">Что такое обычный
+                                        вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/8.png" alt="">
+                                    </div>
+                                    <p class="title">Чем отличаются общие
+                                        и специальные вопросы?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                            <div class="article__slider_wrap">
+                                <a href="#" class="article__slider_block">
+                                    <div class="img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <p class="title">Как делается общий вопрос?</p>
+                                    <p class="date">14.12.2022</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="company__banner2">
+                <img src="img/woman2.png" alt="" class="woman2">
+                <div class="wrap">
+                    <p class="title">Получите <span>бесплатную</span>
+                        консультацию
+                    </p>
+                    <button class="btn open-modal">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+        <section class="consultation consultation_mobile">
+            <img src="img/form-bg.png" alt="" class="consultation__bg">
+            <div class="container">
+                <p class="consultation__title">
+                    Получите <span>бесплатную</span> консультацию
+                </p>
+                <div class="consultation__form">
+                    <div class="input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="input">
+                        <input class="tel input_phone" type="text" placeholder="Телефон">
+                    </div>
+                    <div class="input">
+                        <input type="email" placeholder="Электронная почта">
+                    </div>
+                    <button class="btn modal-2-open">Отправить заявку</button>
+                    <p class="text">Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div href="" class="besamogas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.07969 14.1005L11.2721 23.2929C11.6626 23.6834 12.2958 23.6834 12.6863 23.2929L13.3934 22.5858C13.7839 22.1953 13.7839 21.5621 13.3934 21.1716L4.90812 12.6863C4.5176 12.2958 4.5176 11.6626 4.90812 11.2721L13.3934 2.7868C13.7839 2.39627 13.7839 1.76311 13.3934 1.37258L12.6863 0.665477C12.2958 0.274953 11.6626 0.274953 11.2721 0.665477L2.07969 9.85786L0.66548 11.2721C0.274955 11.6626 0.274956 12.2958 0.66548 12.6863L2.07969 14.1005Z" fill="#fff"/>
+        </svg>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__nav">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="#" class="item">Сбережения</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Займы</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Акции</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="footer__call open-modal">Заказать звонок</button>
+            </div>
+            <div class="footer__bottom">
+                <div class="left">
+                    <p class="footer__copy">© ООО “Кредитный центр” 2016-2022
+                        <a href="#">Политика конфиденциальности</a>
+                    </p>
+                </div>
+                <div class="right">
+                    <div>
+                        <a href="#" class="link">Создание сайтов</a>
+                        <a href="#" class="link">Продвижение сайтов</a>
+                    </div>
+                    <img src="img/logo_KONTUR.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.article__slider').slick({
+            arrows: true,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            variableWidth: true
+        });
+    </script>
+</body>
+</html>
