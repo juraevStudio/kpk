@@ -1230,8 +1230,7 @@ h2 .link {
   width: 190px;
   height: 250px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 15px 30px rgba(136, 161, 171, 0.15);
-          box-shadow: 0px 15px 30px rgba(136, 161, 171, 0.15);
+  box-shadow: 0 0 5px #dbdbdb;
   border-radius: 10px;
   position: relative;
   cursor: pointer;
